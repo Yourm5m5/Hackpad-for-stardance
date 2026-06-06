@@ -1,26 +1,109 @@
-# Hackpad
-It is a hackpad
+# ⌨️ Hackpad — 3-Key Media Macropad
 
-Render of macropad
-<img width="608" height="698" alt="image" src="https://github.com/user-attachments/assets/31a828e8-2b13-4715-b19d-785a1a69d9b7" />
+Hackpad is an ultra-compact, custom-built 3-key mechanical macropad powered by the **Seeed Studio XIAO RP2040** and running **KMK Firmware**. It features custom Tap Dance functionality, allowing you to seamlessly control volume, track navigation, and media playback with only three physical switches.
 
-PCB layout
-<img width="186" height="356" alt="image" src="https://github.com/user-attachments/assets/df20df70-f5af-4cbe-b86b-80ac6ba3b6a2" />
+---
 
-Schematic
-<img width="1015" height="492" alt="image" src="https://github.com/user-attachments/assets/4b82a4d8-8efa-4747-b0eb-5d2521c19c76" />
+## 🚀 Features
 
-3D model of Case
-<img width="1398" height="868" alt="image" src="https://github.com/user-attachments/assets/404f1bad-b3b0-47c0-9345-67d14bc2bc9d" />
+* **Compact Form Factor:** Designed around the tiny Seeed XIAO RP2040 footprint.
+* **Tap Dance Controls:** Get 6 different media functions out of just 3 physical keys.
+* **Premium Build Hardware:** Uses durable M3 heatset inserts for a robust, reusable 3D-printed case assembly.
+* **Custom PCB Design:** Clean, reliable hardware routing (no messy hand-wiring birds-nests!).
 
-List of materials:
-Seeed XIAO RP2040 microcontroller at https://www.aliexpress.com/item/1005007427287029.html?src=google - $16
-MX-style mechanical switches at https://www.aliexpress.com/item/1005008904106530.html?spm=a2g0o.productlist.main.1.5cbedS3OdS3OKO&algo_pvid=92c73d7d-6465-47bf-a02e-19211dd9dbf8&algo_exp_id=92c73d7d-6465-47bf-a02e-19211dd9dbf8-0&pdp_ext_f=%7B%22order%22%3A%22353%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21AUD%2110.22%211.41%21%21%217.17%210.99%21%402101ee6617807428925011126e65e5%2112000047137779065%21sea%21AU%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Ac714f372%3Bm03_new_user%3A-29895%3BpisId%3A5000000204867275&curPageLogUid=bqZGmyPBcWbT&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005008904106530%7C_p_origin_prod%3A
-- $11
-Blank DSA keycaps at https://www.aliexpress.com/item/1005002976015114.html?spm=a2g0o.productlist.main.11.6c97D3DtD3DtGA&algo_pvid=c68403ce-558b-480c-9b68-686283728db0&algo_exp_id=c68403ce-558b-480c-9b68-686283728db0-10&pdp_ext_f=%7B%22order%22%3A%22694%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21AUD%215.06%214.72%21%21%213.55%213.31%21%402101d97817807429428235442ec73f%2112000058070827886%21sea%21AU%212833378720%21X%211%210%21n_tag%3A-29919%3Bd%3Ac714f372%3Bm03_new_user%3A-29895&curPageLogUid=Npf0KY2bKFZC&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005002976015114%7C_p_origin_prod%3A
-- $5
+---
 
-M3×16mm screws at https://www.aliexpress.com/item/1005005041733771.html?spm=a2g0o.productlist.main.7.45d12ebcLFPsrO&algo_pvid=ec611b51-7eae-4c16-abaa-e1c8ff14c6b8&algo_exp_id=ec611b51-7eae-4c16-abaa-e1c8ff14c6b8-6&pdp_ext_f=%7B%22order%22%3A%22386%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21AUD%217.54%211.41%21%21%215.29%210.99%21%402101f11417807430105545344e40f0%2112000031425723887%21sea%21AU%212833378720%21X%211%210%21n_tag%3A-29919%3Bd%3Ac714f372%3Bm03_new_user%3A-29895%3BpisId%3A5000000204059337&curPageLogUid=Bq7ptGT76ySS&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005041733771%7C_p_origin_prod%3A
-- $9
-M3×5×4mm heatset inserts at https://www.aliexpress.com/item/1005004701945081.html?spm=a2g0o.productlist.main.1.c501fVWHfVWHgo&algo_pvid=2bb6fc28-63cf-4ff6-be47-5c845e6940d6&algo_exp_id=2bb6fc28-63cf-4ff6-be47-5c845e6940d6-0&pdp_ext_f=%7B%22order%22%3A%22119%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21AUD%214.51%211.41%21%21%213.16%210.99%21%4021033d9d17807430689636005ed17a%2112000030156876634%21sea%21AU%212833378720%21X%211%210%21n_tag%3A-29919%3Bd%3Ac714f372%3Bm03_new_user%3A-29895%3BpisId%3A5000000204059337&curPageLogUid=gd3hLEFd8jqA&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005004701945081%7C_p_origin_prod%3A
-- $5
+## 📂 Design & Gallery
+
+### Render of Macropad
+![Render of Macropad](https://github.com/user-attachments/assets/31a828e8-2b13-4715-b19d-785a1a69d9b7)
+
+### 3D Model of Case
+![3D model of Case](https://github.com/user-attachments/assets/404f1bad-b3b0-47c0-9345-67d14bc2bc9d)
+
+### PCB Layout
+![PCB layout](https://github.com/user-attachments/assets/df20df70-f5af-4cbe-b86b-80ac6ba3b6a2)
+
+### Schematic Diagram
+![Schematic](https://github.com/user-attachments/assets/4b82a4d8-8efa-4747-b0eb-5d2521c19c76)
+
+---
+
+## 🛠️ Bill of Materials (BOM)
+
+| Component | Description | Estimated Price (AUD) | Link |
+| :--- | :--- | :---: | :--- |
+| **Microcontroller** | Seeed XIAO RP2040 Development Board | ~$16.00 | [Aliexpress](https://www.aliexpress.com/item/1005007427287029.html) |
+| **Switches** | MX-style mechanical switches (Linear/Tactile) | ~$11.00 | [Aliexpress](https://www.aliexpress.com/item/1005008904106530.html) |
+| **Keycaps** | Blank DSA Profile PBT Keycaps | ~$5.00 | [Aliexpress](https://www.aliexpress.com/item/1005002976015114.html) |
+| **Screws** | M3 × 16mm socket head screws | ~$9.00 | [Aliexpress](https://www.aliexpress.com/item/1005005041733771.html) |
+| **Threaded Inserts**| M3 × 5mm (OD) × 4mm (L) brass heatset inserts | ~$5.00 | [Aliexpress](https://www.aliexpress.com/item/1005004701945081.html) |
+
+---
+
+## 🎛️ Default Keymap Layout (Tap Dance)
+
+Thanks to KMK's `TapDance` module, every switch has two distinct functions based on how many times you press it:
+
+| Switch | Single Tap Action | Double Tap Action |
+| :---: | :--- | :--- |
+| **Key 1** | 🔇 Mute / Unmute | ⏯️ Play / Pause Video |
+| **Key 2** | 🔊 Volume UP | ⏭️ Skip Forward (Next Track) |
+| **Key 3** | 🔉 Volume DOWN |  Skip Backward (Previous Track) |
+
+---
+
+## 💻 Software & Firmware Setup
+
+The Hackpad runs on **CircuitPython** paired with the **KMK Keyboard Firmware framework**. 
+
+### 1. Flash CircuitPython
+1. Download the latest `.uf2` stable firmware for the **Seeed XIAO RP2040** from [circuitpython.org](https://circuitpython.org/downloads).
+2. Connect your XIAO to your computer while holding down the **BOOT** button.
+3. A new flash drive named `RPI-RP2` will appear. Drag and drop the downloaded `.uf2` file onto it.
+4. The board will reboot automatically as a USB drive named **`CIRCUITPY`**.
+
+### 2. Install KMK Library
+1. Download the KMK Firmware source code from the official [KMK GitHub Repository](https://github.com/KMKfw/kmk_firmware).
+2. Copy the folder named `kmk` from the ZIP directly onto your `CIRCUITPY` drive root.
+
+### 3. Add the Configuration Script
+Save the following production code to your `CIRCUITPY` drive as **`code.py`**:
+
+```python
+import board
+from kmk.kmk_keyboard import KMKKeyboard
+from kmk.keys import KC
+from kmk.scanners import DiodeOrientation
+from kmk.extensions.media_keys import MediaKeys
+from kmk.modules.tapdance import TapDance
+
+keyboard = KMKKeyboard()
+
+# Enable media controls and Tap Dance features
+keyboard.extensions.append(MediaKeys())
+tapdance = TapDance()
+tapdance.tap_time = 250  # Double-tap window in milliseconds
+keyboard.modules.append(tapdance)
+
+# Matrix hardware layout pins for Hackpad
+keyboard.col_pins = (board.D9,)
+keyboard.row_pins = (board.D10, board.D11)
+keyboard.diode_orientation = DiodeOrientation.COL2ROW
+
+# Configure Tap Dance Macros (Single Tap, Double Tap)
+MUTE_PAUSE = KC.TD(KC.AUDIO_MUTE, KC.MEDIA_PLAY_PAUSE)
+VOL_UP_FORWARD = KC.TD(KC.AUDIO_VOL_UP, KC.MEDIA_NEXT_TRACK)
+VOL_DOWN_BACK = KC.TD(KC.AUDIO_VOL_DOWN, KC.MEDIA_PREV_TRACK)
+
+# Apply configuration to keys mapping
+keyboard.keymap = [
+    [
+        MUTE_PAUSE,       # Key 1
+        VOL_UP_FORWARD,   # Key 2
+        VOL_DOWN_BACK     # Key 3
+    ]
+]
+
+if __name__ == "__main__":
+    keyboard.go()
