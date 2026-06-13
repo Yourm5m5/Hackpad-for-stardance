@@ -1,10 +1,10 @@
-# ⌨️ Hackpad — 3-Key Media Macropad
+# Hackpad — 3-Key Media Macropad
 
 Hackpad is an ultra-compact, custom-built 3-key mechanical macropad powered by the **Seeed Studio XIAO RP2040** and running **KMK Firmware**. It features custom Tap Dance functionality, allowing you to seamlessly control volume, track navigation, and media playback with only three physical switches.
 
 ---
 
-## 🚀 Features
+## Features
 
 * **Compact Form Factor:** Designed around the tiny Seeed XIAO RP2040 footprint.
 * **Tap Dance Controls:** Get 6 different media functions out of just 3 physical keys.
@@ -13,7 +13,7 @@ Hackpad is an ultra-compact, custom-built 3-key mechanical macropad powered by t
 
 ---
 
-## 📂 Design & Gallery
+## Design & Gallery
 
 ### Render of Macropad
 ![Render of Macropad](https://github.com/user-attachments/assets/31a828e8-2b13-4715-b19d-785a1a69d9b7)
@@ -29,7 +29,7 @@ Hackpad is an ultra-compact, custom-built 3-key mechanical macropad powered by t
 
 ---
 
-## 🛠️ Bill of Materials (BOM)
+## Bill of Materials (BOM)
 
 | Component | Description | Estimated Price (AUD) | Link |
 | :--- | :--- | :---: | :--- |
@@ -41,19 +41,19 @@ Hackpad is an ultra-compact, custom-built 3-key mechanical macropad powered by t
 
 ---
 
-## 🎛️ Default Keymap Layout (Tap Dance)
+## Default Keymap Layout (Tap Dance)
 
 Thanks to KMK's `TapDance` module, every switch has two distinct functions based on how many times you press it:
 
 | Switch | Single Tap Action | Double Tap Action |
 | :---: | :--- | :--- |
-| **Key 1** | 🔇 Mute / Unmute | ⏯️ Play / Pause Video |
-| **Key 2** | 🔊 Volume UP | ⏭️ Skip Forward (Next Track) |
+| **Key 1** | 🔇 Mute / Unmute | Play / Pause Video |
+| **Key 2** | 🔊 Volume UP | kip Forward (Next Track) |
 | **Key 3** | 🔉 Volume DOWN |  Skip Backward (Previous Track) |
 
 ---
 
-## 💻 Software & Firmware Setup
+## Software & Firmware Setup
 
 The Hackpad runs on **CircuitPython** paired with the **KMK Keyboard Firmware framework**. 
 
@@ -107,3 +107,13 @@ keyboard.keymap = [
 
 if __name__ == "__main__":
     keyboard.go()
+```
+
+## Credits
+I use AI to help me structure my repo
+
+
+
+
+
+
